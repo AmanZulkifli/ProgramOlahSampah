@@ -1,5 +1,4 @@
 <html class="">
-
 <head>
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/logo.png') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -7,15 +6,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="">
-    <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.6.12/plyr.css" media="all">
     <link id="builder-default-fonts"
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&amp;family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
         rel="stylesheet">
     <style id="css-utility-php-email-form">
-        /* PHP Email Form Messages
-  ------------------------------*/
+        /* PHP Email Form Messages------------------------------*/
         .php-email-form .error-message {
             display: none;
             background: #df1529;
@@ -25,7 +21,6 @@
             margin-bottom: 24px;
             font-weight: 600;
         }
-
         .php-email-form .sent-message {
             display: none;
             color: #ffffff;
@@ -35,7 +30,6 @@
             margin-bottom: 24px;
             font-weight: 600;
         }
-
         .php-email-form .loading {
             display: none;
             background: var(--surface-color);
@@ -43,7 +37,6 @@
             padding: 15px;
             margin-bottom: 24px;
         }
-
         .php-email-form .loading:before {
             content: "";
             display: inline-block;
@@ -55,12 +48,10 @@
             border-top-color: var(--surface-color);
             animation: php-email-form-loading 1s linear infinite;
         }
-
         @keyframes php-email-form-loading {
             0% {
                 transform: rotate(0deg);
             }
-
             100% {
                 transform: rotate(360deg);
             }
@@ -101,24 +92,20 @@
             --nav-dropdown-hover-color: #1acc8d;
             scroll-behavior: smooth;
         }
-
         body {
             color: var(--default-color);
             background-color: var(--background-color);
             font-family: var(--default-font);
         }
-
         a {
             color: var(--accent-color);
             text-decoration: none;
             transition: 0.3s;
         }
-
         a:hover {
             color: color-mix(in srgb, var(--accent-color), transparent 25%);
             text-decoration: none;
         }
-
         h1,
         h2,
         h3,
@@ -128,7 +115,6 @@
             color: var(--heading-color);
             font-family: var(--heading-font);
         }
-
         section,
         .section {
             color: var(--default-color);
@@ -137,20 +123,16 @@
             scroll-margin-top: 100px;
             overflow: clip;
         }
-
         @media (max-width: 1199px) {
-
             section,
             .section {
                 scroll-margin-top: 66px;
             }
         }
-
         .section-title {
             padding-bottom: 60px;
             position: relative;
         }
-
         .section-title h2 {
             font-size: 14px;
             font-weight: 500;
@@ -162,7 +144,6 @@
             color: color-mix(in srgb, var(--default-color), transparent 50%);
             position: relative;
         }
-
         .section-title h2::after {
             content: "";
             width: 120px;
@@ -171,7 +152,6 @@
             background: var(--accent-color);
             margin: 4px 10px;
         }
-
         .section-title div {
             color: var(--heading-color);
             margin: 0;
@@ -181,28 +161,23 @@
             text-transform: uppercase;
             font-family: var(--heading-font);
         }
-
         .page-title {
             color: var(--default-color);
             background-color: var(--background-color);
             position: relative;
         }
-
         .page-title .heading {
             padding: 160px 0 80px 0;
             border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
         }
-
         .page-title .heading h1 {
             font-size: 38px;
             font-weight: 700;
         }
-
         .page-title nav {
             background-color: color-mix(in srgb, var(--default-color), transparent 88%);
             padding: 20px 0;
         }
-
         .page-title nav ol {
             display: flex;
             flex-wrap: wrap;
@@ -211,25 +186,21 @@
             font-size: 16px;
             font-weight: 600;
         }
-
         .page-title nav ol li+li {
             padding-left: 10px;
         }
-
         .page-title nav ol li+li::before {
             content: "/";
             display: inline-block;
             padding-right: 10px;
             color: color-mix(in srgb, var(--default-color), transparent 70%);
         }
-
         .widgets-container {
             background-color: var(--surface-color);
             padding: 30px;
             margin: 60px 0 30px 0;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
         }
-
         .widget-title {
             color: var(--heading-color);
             font-size: 20px;
@@ -237,11 +208,9 @@
             padding: 0;
             margin: 0 0 20px 0;
         }
-
         .widget-item {
             margin-bottom: 40px;
         }
-
         .widget-item:last-child {
             margin-bottom: 0;
         }
@@ -252,7 +221,6 @@
             --background-color: #f4f5fe;
             --surface-color: #ffffff;
         }
-
         [data-colorpreset="cp-dark-background"],
         .dark-background {
             --background-color: #08005e;
@@ -270,23 +238,19 @@
             transition: all 0.5s;
             z-index: 997;
         }
-
         .header .logo {
             line-height: 1;
         }
-
         .header .logo img {
             max-height: 32px;
             margin-right: 8px;
         }
-
         .header .logo h1 {
             font-size: 30px;
             margin: 0;
             font-weight: 700;
             color: var(--heading-color);
         }
-
         .scrolled .header {
             box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
         }
@@ -303,7 +267,6 @@
             --nav-dropdown-color: #444444;
             --nav-dropdown-hover-color: #1acc8d;
         }
-
         .scrolled .header {
             --background-color: #10058c;
         }
@@ -314,7 +277,6 @@
             .navmenu {
                 padding: 0;
             }
-
             .navmenu ul {
                 margin: 0;
                 padding: 0;
@@ -322,11 +284,9 @@
                 list-style: none;
                 align-items: center;
             }
-
             .navmenu li {
                 position: relative;
             }
-
             .navmenu a,
             .navmenu a:focus {
                 color: var(--nav-color);
@@ -340,7 +300,6 @@
                 white-space: nowrap;
                 transition: 0.3s;
             }
-
             .navmenu a i,
             .navmenu a:focus i {
                 font-size: 12px;
@@ -348,17 +307,14 @@
                 margin-left: 5px;
                 transition: 0.3s;
             }
-
             .navmenu li:last-child a {
                 padding-right: 0;
             }
-
             .navmenu li:hover>a,
             .navmenu .active,
             .navmenu .active:focus {
                 color: var(--nav-hover-color);
             }
-
             .navmenu .dropdown ul {
                 margin: 0;
                 padding: 10px 0;
@@ -374,40 +330,33 @@
                 z-index: 99;
                 box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
             }
-
             .navmenu .dropdown ul li {
                 min-width: 200px;
             }
-
             .navmenu .dropdown ul a {
                 padding: 10px 20px;
                 font-size: 15px;
                 text-transform: none;
                 color: var(--nav-dropdown-color);
             }
-
             .navmenu .dropdown ul a i {
                 font-size: 12px;
             }
-
             .navmenu .dropdown ul a:hover,
             .navmenu .dropdown ul .active:hover,
             .navmenu .dropdown ul li:hover>a {
                 color: var(--nav-dropdown-hover-color);
             }
-
             .navmenu .dropdown:hover>ul {
                 opacity: 1;
                 top: 100%;
                 visibility: visible;
             }
-
             .navmenu .dropdown .dropdown ul {
                 top: 0;
                 left: -90%;
                 visibility: hidden;
             }
-
             .navmenu .dropdown .dropdown:hover>ul {
                 opacity: 1;
                 top: 0;
@@ -415,7 +364,6 @@
                 visibility: visible;
             }
         }
-
         /* Navmenu - Mobile */
         @media (max-width: 1199px) {
             .mobile-nav-toggle {
@@ -426,12 +374,10 @@
                 cursor: pointer;
                 transition: color 0.3s;
             }
-
             .navmenu {
                 padding: 0;
                 z-index: 9997;
             }
-
             .navmenu ul {
                 display: none;
                 list-style: none;
@@ -446,7 +392,6 @@
                 z-index: 9998;
                 box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
             }
-
             .navmenu a,
             .navmenu a:focus {
                 color: var(--nav-dropdown-color);
@@ -460,7 +405,6 @@
                 white-space: nowrap;
                 transition: 0.3s;
             }
-
             .navmenu a i,
             .navmenu a:focus i {
                 font-size: 12px;
@@ -475,26 +419,22 @@
                 transition: 0.3s;
                 background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
             }
-
             .navmenu a i:hover,
             .navmenu a:focus i:hover {
                 background-color: var(--accent-color);
                 color: var(--contrast-color);
             }
-
             .navmenu a:hover,
             .navmenu .active,
             .navmenu .active:focus {
                 color: var(--nav-dropdown-hover-color);
             }
-
             .navmenu .active i,
             .navmenu .active:focus i {
                 background-color: var(--accent-color);
                 color: var(--contrast-color);
                 transform: rotate(180deg);
             }
-
             .navmenu .dropdown ul {
                 position: static;
                 display: none;
@@ -506,20 +446,16 @@
                 box-shadow: none;
                 transition: all .5s ease-in-out;
             }
-
             .navmenu .dropdown ul ul {
                 background-color: rgba(33, 37, 41, 0.1);
             }
-
             .navmenu .dropdown>.dropdown-active {
                 display: block;
                 background-color: rgba(33, 37, 41, 0.03);
             }
-
             .mobile-nav-active {
                 overflow: hidden;
             }
-
             .mobile-nav-active .mobile-nav-toggle {
                 color: #fff;
                 position: absolute;
@@ -529,7 +465,6 @@
                 margin-right: 0;
                 z-index: 9999;
             }
-
             .mobile-nav-active .navmenu {
                 position: fixed;
                 overflow: hidden;
@@ -537,18 +472,15 @@
                 background: rgba(33, 37, 41, 0.8);
                 transition: 0.3s;
             }
-
             .mobile-nav-active .navmenu>ul {
                 display: block;
             }
         }
-
         /* Listing Dropdown - Desktop */
         @media (min-width: 1200px) {
             .navmenu .listing-dropdown {
                 position: static;
             }
-
             .navmenu .listing-dropdown ul {
                 margin: 0;
                 padding: 10px;
@@ -565,11 +497,9 @@
                 border-radius: 4px;
                 z-index: 99;
             }
-
             .navmenu .listing-dropdown ul li {
                 flex: 1;
             }
-
             .navmenu .listing-dropdown ul li a,
             .navmenu .listing-dropdown ul li:hover>a {
                 padding: 10px 20px;
@@ -577,21 +507,18 @@
                 color: var(--nav-dropdown-color);
                 background-color: var(--nav-dropdown-background-color);
             }
-
             .navmenu .listing-dropdown ul li a:hover,
             .navmenu .listing-dropdown ul li .active,
             .navmenu .listing-dropdown ul li .active:hover {
                 color: var(--nav-dropdown-hover-color);
                 background-color: var(--nav-dropdown-background-color);
             }
-
             .navmenu .listing-dropdown:hover>ul {
                 opacity: 1;
                 top: 100%;
                 visibility: visible;
             }
         }
-
         /* Listing Dropdown - Mobile */
         @media (max-width: 1199px) {
             .navmenu .listing-dropdown ul {
@@ -605,11 +532,9 @@
                 box-shadow: none;
                 transition: all .5s ease-in-out;
             }
-
             .navmenu .listing-dropdown ul ul {
                 background-color: rgba(33, 37, 41, 0.1);
             }
-
             .navmenu .listing-dropdown>.dropdown-active {
                 display: block;
                 background-color: rgba(33, 37, 41, 0.03);
@@ -624,27 +549,22 @@
             font-size: 14px;
             border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
         }
-
         .footer a {
             color: var(--default-color) !important;
         }
-
         .footer a:hover {
             color: var(--accent-color);
         }
-
         .footer .copyright {
             margin-top: 50px;
             position: relative;
             padding: 30px 0;
             border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
         }
-
         .footer .copyright p,
         .footer .copyright .credits {
             margin: 2px 0;
         }
-
         .footer .btn-learn-more {
             background-color: var(--accent-color);
             border-radius: 30px;
@@ -654,42 +574,34 @@
             font-size: 14px;
             color: var(--contrast-color) !important;
         }
-
         .footer .btn-learn-more:hover {
             border-color: var(--accent-color);
             background-color: transparent;
             color: var(--accent-color) !important;
         }
-
         .footer .widget .widget-heading {
             font-size: 15px;
             color: var(--heading-color);
             margin-bottom: 20px;
         }
-
         .footer .widget ul li {
             margin-bottom: 10px;
             line-height: 1.5;
         }
-
         .footer .widget ul li a {
             color: color-mix(in srgb, var(--heading-color), transparent 50%);
         }
-
         .footer .widget ul li a:hover {
             text-decoration: none;
             color: var(--heading-color);
         }
-
         .footer .widget .footer-blog-entry .date {
             color: color-mix(in srgb, var(--default-color), transparent 50%);
             font-size: 12px;
         }
-
         .footer .social-icons li {
             display: inline-block;
         }
-
         .footer .social-icons li a {
             display: inline-block;
             width: 40px;
@@ -698,7 +610,6 @@
             border-radius: 50%;
             background: color-mix(in srgb, var(--default-color), transparent 90%);
         }
-
         .footer .social-icons li a span {
             color: color-mix(in srgb, var(--heading-color), transparent 0%);
             position: absolute;
@@ -707,23 +618,18 @@
             transform: translate(-50%, -50%);
             transition: 0.3s all ease-in-out;
         }
-
         .footer .social-icons li a:hover {
             background: var(--accent-color);
         }
-
         .footer .social-icons li a:hover span {
             color: var(--contrast-color);
         }
-
         .footer .social-icons li:first-child a {
             padding-left: 0;
         }
-
         .footer .footer-subscribe form {
             position: relative;
         }
-
         .footer .footer-subscribe .form-control {
             font-size: 14px;
             height: 42px;
@@ -732,16 +638,13 @@
             color: var(--heading-color);
             padding-right: 40px;
         }
-
         .footer .footer-subscribe .form-control:focus {
             border-color: color-mix(in srgb, var(--default-color), transparent 10%);
             box-shadow: none;
         }
-
         .footer .footer-subscribe .form-control::placeholder {
             color: color-mix(in srgb, var(--heading-color), transparent 60%);
         }
-
         .footer .footer-subscribe .btn-link {
             padding: 0;
             margin: 0;
@@ -755,7 +658,6 @@
             right: 10px;
             transform: translateY(-50%) rotate(0deg);
         }
-
         .footer .footer-subscribe .btn-link:hover,
         .footer .footer-subscribe .btn-link:focus,
         .footer .footer-subscribe .btn-link:active {
@@ -776,18 +678,15 @@
             border-radius: 4px;
             transition: all 0.4s;
         }
-
         .scroll-top i {
             font-size: 24px;
             color: var(--contrast-color);
             line-height: 0;
         }
-
         .scroll-top:hover {
             background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
             color: var(--contrast-color);
         }
-
         .scroll-top.active {
             visibility: visible;
             opacity: 1;
@@ -802,7 +701,6 @@
             display: flex;
             align-items: center;
         }
-
         .hero .hero-bg {
             position: absolute;
             inset: 0;
@@ -812,7 +710,6 @@
             object-fit: cover;
             z-index: 1;
         }
-
         .hero:before {
             content: "";
             background: color-mix(in srgb, var(--background-color), transparent 10%);
@@ -820,12 +717,10 @@
             inset: 0;
             z-index: 2;
         }
-
         .hero .container {
             position: relative;
             z-index: 3;
         }
-
         .hero h1 {
             margin: 0 0 20px 0;
             font-size: 48px;
@@ -833,19 +728,16 @@
             line-height: 56px;
             color: color-mix(in srgb, var(--heading-color), transparent 30%);
         }
-
         .hero h1 span {
             color: var(--heading-color);
             border-bottom: 4px solid var(--accent-color);
         }
-
         .hero p {
             color: color-mix(in srgb, var(--default-color), transparent 30%);
             margin: 5px 0 30px 0;
             font-size: 22px;
             font-weight: 400;
         }
-
         .hero .btn-get-started {
             color: var(--contrast-color);
             background: var(--accent-color);
@@ -859,13 +751,11 @@
             transition: 0.5s;
             box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
         }
-
         .hero .btn-get-started:hover {
             color: var(--contrast-color);
             background: color-mix(in srgb, var(--accent-color), transparent 15%);
             box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
         }
-
         .hero .btn-watch-video {
             font-size: 16px;
             transition: 0.5s;
@@ -873,7 +763,6 @@
             color: var(--default-color);
             font-weight: 600;
         }
-
         .hero .btn-watch-video i {
             color: var(--accent-color);
             font-size: 32px;
@@ -881,37 +770,30 @@
             line-height: 0;
             margin-right: 8px;
         }
-
         .hero .btn-watch-video:hover {
             color: var(--accent-color);
         }
-
         .hero .btn-watch-video:hover i {
             color: color-mix(in srgb, var(--accent-color), transparent 15%);
         }
-
         .hero .animated {
             animation: up-down 2s ease-in-out infinite alternate-reverse both;
         }
-
         @media (max-width: 640px) {
             .hero h1 {
                 font-size: 28px;
                 line-height: 36px;
             }
-
             .hero p {
                 font-size: 18px;
                 line-height: 24px;
                 margin-bottom: 30px;
             }
-
             .hero .btn-get-started,
             .hero .btn-watch-video {
                 font-size: 13px;
             }
         }
-
         .hero .hero-waves {
             display: block;
             width: 100%;
@@ -922,62 +804,51 @@
             right: 0;
             z-index: 3;
         }
-
         .hero .wave1 use {
             animation: move-forever1 10s linear infinite;
             animation-delay: -2s;
             fill: var(--default-color);
             opacity: 0.6;
         }
-
         .hero .wave2 use {
             animation: move-forever2 8s linear infinite;
             animation-delay: -2s;
             fill: var(--default-color);
             opacity: 0.4;
         }
-
         .hero .wave3 use {
             animation: move-forever3 6s linear infinite;
             animation-delay: -2s;
             fill: var(--default-color);
         }
-
         @keyframes move-forever1 {
             0% {
                 transform: translate(85px, 0%);
             }
-
             100% {
                 transform: translate(-90px, 0%);
             }
         }
-
         @keyframes move-forever2 {
             0% {
                 transform: translate(-90px, 0%);
             }
-
             100% {
                 transform: translate(85px, 0%);
             }
         }
-
         @keyframes move-forever3 {
             0% {
                 transform: translate(-90px, 0%);
             }
-
             100% {
                 transform: translate(85px, 0%);
             }
         }
-
         @keyframes up-down {
             0% {
                 transform: translateY(10px);
             }
-
             100% {
                 transform: translateY(-10px);
             }
@@ -987,7 +858,6 @@
         .about {
             padding-top: 100px;
         }
-
         .about .content h3 {
             font-size: 16px;
             font-weight: 500;
@@ -998,15 +868,12 @@
             border-radius: 7px;
             display: inline-block;
         }
-
         .about .content h2 {
             font-weight: 700;
         }
-
         .about .content p:last-child {
             margin-bottom: 0;
         }
-
         .about .content .read-more {
             background: var(--accent-color);
             color: var(--contrast-color);
@@ -1021,23 +888,19 @@
             align-items: center;
             justify-content: center;
         }
-
         .about .content .read-more i {
             font-size: 18px;
             margin-left: 5px;
             line-height: 0;
             transition: 0.3s;
         }
-
         .about .content .read-more:hover {
             background: color-mix(in srgb, var(--accent-color), transparent 20%);
             padding-right: 19px;
         }
-
         .about .content .read-more:hover i {
             margin-left: 10px;
         }
-
         .about .icon-box {
             background-color: var(--surface-color);
             padding: 50px 40px;
@@ -1045,7 +908,6 @@
             border-radius: 10px;
             transition: all 0.3s ease-out 0s;
         }
-
         .about .icon-box i {
             width: 80px;
             height: 80px;
@@ -1060,29 +922,23 @@
             background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
             color: var(--accent-color);
         }
-
         .about .icon-box h3 {
             margin-bottom: 10px;
             font-size: 24px;
             font-weight: 700;
         }
-
         .about .icon-box p {
             margin-bottom: 0;
         }
-
         .about .icon-box:hover i {
             background-color: var(--accent-color);
             color: var(--contrast-color);
         }
-
         .about .icon-boxes .col-md-6:nth-child(2) .icon-box,
         .about .icon-boxes .col-md-6:nth-child(4) .icon-box {
             margin-top: -40px;
         }
-
         @media (max-width: 768px) {
-
             .about .icon-boxes .col-md-6:nth-child(2) .icon-box,
             .about .icon-boxes .col-md-6:nth-child(4) .icon-box {
                 margin-top: 0;
@@ -1093,12 +949,10 @@
         .team .member {
             position: relative;
         }
-
         .team .member .pic {
             overflow: hidden;
             margin-bottom: 50px;
         }
-
         .team .member .member-info {
             background-color: var(--surface-color);
             color: color-mix(in srgb, var(--default-color), transparent 20%);
@@ -1111,7 +965,6 @@
             overflow: hidden;
             transition: 0.5s;
         }
-
         .team .member h4 {
             font-weight: 700;
             margin-bottom: 10px;
@@ -1119,7 +972,6 @@
             position: relative;
             padding-bottom: 10px;
         }
-
         .team .member h4::after {
             content: "";
             position: absolute;
@@ -1130,28 +982,23 @@
             bottom: 0;
             left: 0;
         }
-
         .team .member span {
             font-style: italic;
             display: block;
             font-size: 13px;
         }
-
         .team .member .social {
             position: absolute;
             right: 15px;
             bottom: 15px;
         }
-
         .team .member .social a {
             transition: color 0.3s;
             color: color-mix(in srgb, var(--default-color), transparent 70%);
         }
-
         .team .member .social a:hover {
             color: var(--accent-color);
         }
-
         .team .member .social i {
             font-size: 16px;
             margin: 0 2px;
@@ -1162,15 +1009,12 @@
             font-weight: 400;
             font-size: 34px;
         }
-
         .faq .content p {
             color: color-mix(in srgb, var(--default-color), transparent 30%);
         }
-
         .faq .faq-container {
             margin-top: 15px;
         }
-
         .faq .faq-container .faq-item {
             background-color: var(--surface-color);
             position: relative;
@@ -1179,11 +1023,9 @@
             box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
             overflow: hidden;
         }
-
         .faq .faq-container .faq-item:last-child {
             margin-bottom: 0;
         }
-
         .faq .faq-container .faq-item h3 {
             font-weight: 600;
             font-size: 17px;
@@ -1192,16 +1034,13 @@
             transition: 0.3s;
             cursor: pointer;
         }
-
         .faq .faq-container .faq-item h3 span {
             color: var(--accent-color);
             padding-right: 5px;
         }
-
         .faq .faq-container .faq-item h3:hover {
             color: var(--accent-color);
         }
-
         .faq .faq-container .faq-item .faq-content {
             display: grid;
             grid-template-rows: 0fr;
@@ -1209,12 +1048,10 @@
             visibility: hidden;
             opacity: 0;
         }
-
         .faq .faq-container .faq-item .faq-content p {
             margin-bottom: 0;
             overflow: hidden;
         }
-
         .faq .faq-container .faq-item .faq-icon {
             position: absolute;
             top: 22px;
@@ -1224,7 +1061,6 @@
             transition: 0.3s;
             color: var(--accent-color);
         }
-
         .faq .faq-container .faq-item .faq-toggle {
             position: absolute;
             top: 20px;
@@ -1234,22 +1070,18 @@
             transition: 0.3s;
             cursor: pointer;
         }
-
         .faq .faq-container .faq-item .faq-toggle:hover {
             color: var(--accent-color);
         }
-
         .faq .faq-container .faq-active h3 {
             color: var(--accent-color);
         }
-
         .faq .faq-container .faq-active .faq-content {
             grid-template-rows: 1fr;
             visibility: visible;
             opacity: 1;
             padding-top: 10px;
         }
-
         .faq .faq-container .faq-active .faq-toggle {
             transform: rotate(90deg);
             color: var(--accent-color);
@@ -1259,7 +1091,6 @@
         .contact .info-item+.info-item {
             margin-top: 40px;
         }
-
         .contact .info-item i {
             color: var(--accent-color);
             background: color-mix(in srgb, var(--accent-color), transparent 92%);
@@ -1273,29 +1104,24 @@
             transition: all 0.3s ease-in-out;
             margin-right: 15px;
         }
-
         .contact .info-item h3 {
             padding: 0;
             font-size: 18px;
             font-weight: 700;
             margin-bottom: 5px;
         }
-
         .contact .info-item p {
             padding: 0;
             margin-bottom: 0;
             font-size: 14px;
         }
-
         .contact .info-item:hover i {
             background: var(--accent-color);
             color: var(--contrast-color);
         }
-
         .contact .php-email-form {
             height: 100%;
         }
-
         .contact .php-email-form input[type=text],
         .contact .php-email-form input[type=email],
         .contact .php-email-form textarea {
@@ -1307,19 +1133,16 @@
             background-color: color-mix(in srgb, var(--background-color), transparent 50%);
             border-color: color-mix(in srgb, var(--default-color), transparent 80%);
         }
-
         .contact .php-email-form input[type=text]:focus,
         .contact .php-email-form input[type=email]:focus,
         .contact .php-email-form textarea:focus {
             border-color: var(--accent-color);
         }
-
         .contact .php-email-form input[type=text]::placeholder,
         .contact .php-email-form input[type=email]::placeholder,
         .contact .php-email-form textarea::placeholder {
             color: color-mix(in srgb, var(--default-color), transparent 70%);
         }
-
         .contact .php-email-form button[type=submit] {
             color: var(--contrast-color);
             background: var(--accent-color);
@@ -1328,7 +1151,6 @@
             transition: 0.4s;
             border-radius: 50px;
         }
-
         .contact .php-email-form button[type=submit]:hover {
             background: color-mix(in srgb, var(--accent-color), transparent 25%);
         }
@@ -1338,7 +1160,6 @@
             position: relative;
             padding: 120px 0;
         }
-
         .stats-2 img {
             position: absolute;
             inset: 0;
@@ -1348,7 +1169,6 @@
             object-fit: cover;
             z-index: 1;
         }
-
         .stats-2:before {
             content: "";
             background: color-mix(in srgb, var(--background-color), transparent 30%);
@@ -1356,24 +1176,20 @@
             inset: 0;
             z-index: 2;
         }
-
         .stats-2 .container {
             position: relative;
             z-index: 3;
         }
-
         .stats-2 .stats-item {
             padding: 30px;
             width: 100%;
         }
-
         .stats-2 .stats-item span {
             font-size: 48px;
             display: block;
             color: var(--default-color);
             font-weight: 700;
         }
-
         .stats-2 .stats-item p {
             padding: 0;
             margin: 0;
@@ -1388,13 +1204,11 @@
             --default-color: #555;
             --heading-color: #333;
         }
-
         .features .feature-box {
             height: 100%;
             padding: 40px 30px;
             border-radius: 10px;
         }
-
         .features .feature-box i {
             font-size: 44px;
             display: inline-block;
@@ -1402,46 +1216,36 @@
             color: var(--accent-color);
             margin-bottom: 20px;
         }
-
         .features .feature-box h4 {
             font-size: 20px;
             font-weight: 700;
             margin: 0 0 10px 0;
         }
-
         .features .feature-box p {
             font-size: 15px;
             margin-bottom: 0;
         }
-
         .features .feature-box.orange {
             background-color: #fff3e2;
         }
-
         .features .feature-box.orange i {
             color: #edb86e;
         }
-
         .features .feature-box.blue {
             background-color: #deedfd;
         }
-
         .features .feature-box.blue i {
             color: #20a5f8;
         }
-
         .features .feature-box.green {
             background-color: #d5f1e4;
         }
-
         .features .feature-box.green i {
             color: #48c88a;
         }
-
         .features .feature-box.red {
             background-color: #fdeded;
         }
-
         .features .feature-box.red i {
             color: #f28484;
         }
@@ -1458,38 +1262,31 @@
         .builder-add-components-btn {
             margin-top: 132.5px;
         }
-
         .page-title~.builder-add-components-btn {
             margin-top: 40px;
         }
-
         .builder-add-placeholder {
             margin-top: 132.5px;
         }
-
         .page-title~.builder-add-placeholder,
         .builder-section-wrap+.builder-add-placeholder {
             margin-top: 40px;
         }
-
         .builder-section-wrap:first-of-type .builder-section-hover-left,
         .builder-section-wrap:first-of-type .builder-section-hover-right {
             top: 107.5px;
         }
-
         .builder-section-wrap:first-of-type .builder-section-hover-top {
             top: 92.5px;
         }
-
         ;
     </style>
     <script type="text/javascript" id="www-widgetapi-script"
         src="https://www.youtube.com/s/player/2f238d39/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
     <script src="https://www.youtube.com/iframe_api" async=""></script>
 </head>
-
 <body class="builder-mode index-page scrolled">
-    <div hidden="" id="sprite-plyr"><!--?xml version="1.0" encoding="UTF-8"?--><svg
+    <div hidden="" id="sprite-plyr"><svg
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <symbol id="plyr-airplay" viewBox="0 0 18 18">
                 <path d="M16 1H2a1 1 0 00-1 1v10a1 1 0 001 1h3v-2H3V3h12v8h-2v2h3a1 1 0 001-1V2a1 1 0 00-1-1z"></path>
@@ -1575,11 +1372,9 @@
     <header id="header" class="header d-flex align-items-center fixed-top" data-builder="header"
         data-js=" scrolled scroll-up-sticky">
         <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
             <a href="{{ route('landingpage') }}" class="logo d-flex align-items-center" spellcheck="false">
                 <h1 class="sitename" spellcheck="false">RecyclePro♻️</h1>
             </a>
-
             <nav id="navmenu" class="navmenu" data-builder="navmenu"
                 data-js=" mobile-nav-toggle mobile-nav-dropdown">
                 <ul>
@@ -1603,37 +1398,29 @@
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none fa fa-bars"></i>
             </nav>
-
         </div>
     </header>
     <main class="main" id="page-sjhdfjhdsjh" data-name="index">
-
         <slot type="page-title"></slot>
-
         <div id="section-Wx1F9FPrD8" class="builder-section-wrap position-relative " data-js=" glightbox">
             <section id="hero" class="hero section" data-builder="section"
                 data-colorpreset="cp-dark-background">
                 <img src="https://builder.bootstrapmade.com/static/img/hero-bg-2.jpg" alt="" class="hero-bg">
-
                 <div class="container">
                     <div class="row gy-4 justify-content-between">
                         <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
                             <img src="{{ asset('assets/images/logo.png') }}" class="img-fluid animated"
                                 alt="">
                         </div>
-
                         <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
                             <h1 spellcheck="false">Hello! Welcome to&nbsp;<span>RecyclePro♻️!</span></h1>
                             <p spellcheck="false">Transforming waste into resources for a sustainable future.</p>
                             <div class="d-flex">
                                 <a href="#about" class="btn-get-started">Get Started</a>
-
                             </div>
                         </div>
-
                     </div>
                 </div>
-
                 <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="0 24 150 28 " preserveAspectRatio="none">
                     <defs>
@@ -1650,18 +1437,13 @@
                         <use xlink:href="#wave-path" x="50" y="9"></use>
                     </g>
                 </svg>
-
-
             </section>
         </div>
         <div id="section-iKEdvevp2K" class="builder-section-wrap position-relative ">
             <section id="about" class="about section" data-builder="section">
-
                 <slot type="section-title"></slot>
-
                 <div class="container" data-aos="fade-up" data-aos-delay="100">
                     <div class="row align-items-xl-center gy-5">
-
                         <div class="col-xl-5 content">
                             <h3>About Us</h3>
                             <h2 spellcheck="false">Get to know us better!</h2>
@@ -1672,21 +1454,17 @@
                             <a href="#" class="read-more"><span>Try it now!</span><i
                                     class="fa-solid fa-arrow-right"></i></a>
                         </div>
-
                         <div class="col-xl-7">
                             <div class="row gy-4 icon-boxes">
-
                                 <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
                                     <div class="icon-box">
                                         <i class="fa-solid fa-people-group"></i>
                                         <h3 spellcheck="false">Empowering Communities</h3>
-                                        <p spellcheck="false">Magni repellendus vel ullam hic officia accusantium ipsa
-                                            dolor omnis dolor voluptateme help communities understand the value of their
+                                        <p spellcheck="false">Help communities understand the value of their
                                             waste. By providing education and resources, we empower people to take
                                             control of their environmental impact, one recycled item at a time.</p>
                                     </div>
-                                </div> <!-- End Icon Box -->
-
+                                </div> 
                                 <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                                     <div class="icon-box">
                                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -1695,8 +1473,7 @@
                                             sustainable waste management solutions. Together, we can reduce landfill
                                             waste and promote a circular economy that benefits everyone.</p>
                                     </div>
-                                </div> <!-- End Icon Box -->
-
+                                </div> 
                                 <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
                                     <div class="icon-box">
                                         <i class="fa-solid fa-recycle"></i>
@@ -1706,8 +1483,7 @@
                                             opportunities for businesses and provide financial incentives for
                                             communities.</p>
                                     </div>
-                                </div> <!-- End Icon Box -->
-
+                                </div> 
                                 <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
                                     <div class="icon-box">
                                         <i class="fa-solid fa-chart-line"></i>
@@ -1716,29 +1492,21 @@
                                             making. RecyclePro helps you measure your progress and provides insights on
                                             how to improve your recycling efforts for maximum impact.</p>
                                     </div>
-                                </div> <!-- End Icon Box -->
-
+                                </div> 
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </section>
         </div>
         <div id="section-U5EuO6g6Bc" class="builder-section-wrap position-relative " data-js=" purecounter">
             <section id="stats-2" class="stats-2 section" data-builder="section"
                 data-colorpreset="cp-dark-background">
-
                 <slot type="section-title"></slot>
-
                 <img src="https://builder.bootstrapmade.com/static/img/stats-bg.jpg" alt=""
                     data-aos="fade-in">
-
                 <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-
                     <div class="row gy-4">
-
                         <div class="col-lg-3 col-md-6">
                             <div class="stats-item text-center w-100 h-100">
                                 <span data-purecounter-start="0" data-purecounter-end="232"
@@ -1746,8 +1514,7 @@
                                     data-no-editable="true">232</span>
                                 <p spellcheck="false">Users</p>
                             </div>
-                        </div><!-- End Stats Item -->
-
+                        </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="stats-item text-center w-100 h-100">
                                 <span data-purecounter-start="0" data-purecounter-end="53"
@@ -1755,8 +1522,7 @@
                                     data-no-editable="true">521</span>
                                 <p spellcheck="false" class="">Affiliates</p>
                             </div>
-                        </div><!-- End Stats Item -->
-
+                        </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="stats-item text-center w-100 h-100">
                                 <span data-purecounter-start="0" data-purecounter-end="1453"
@@ -1764,8 +1530,7 @@
                                     data-no-editable="true">1453</span>
                                 <p spellcheck="false">Hours Of Support</p>
                             </div>
-                        </div><!-- End Stats Item -->
-
+                        </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="stats-item text-center w-100 h-100">
                                 <span data-purecounter-start="0" data-purecounter-end="32"
@@ -1773,28 +1538,21 @@
                                     data-no-editable="true">32</span>
                                 <p spellcheck="false">Workers</p>
                             </div>
-                        </div><!-- End Stats Item -->
-
+                        </div>
                     </div>
-
                 </div>
-
             </section>
         </div>
         <div id="section-3c7IoYNAF6" class="builder-section-wrap position-relative ">
             <section id="features" class="features section" data-builder="section">
-
                 <div class="container section-title" data-aos="fade-up" data-builder="section-title">
                     <h2 spellcheck="false">Features</h2>
                     <div><span spellcheck="false">Check Our</span> <span class="description-title"
                             spellcheck="false">Features</span></div>
                 </div>
                 <slot type="section-title"></slot>
-
                 <div class="container">
-
                     <div class="row gy-4">
-
                         <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
                             <div class="feature-box orange">
                                 <i class="fa-solid fa-leaf"></i>
@@ -1802,8 +1560,7 @@
                                 <p spellcheck="false" class="">RecyclePro ensures all our recycling practices
                                     reduce waste and promote a sustainable lifestyle.</p>
                             </div>
-                        </div><!-- End Feature Borx-->
-
+                        </div>
                         <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                             <div class="feature-box blue">
                                 <i class="fa-regular fa-eye"></i>
@@ -1811,8 +1568,7 @@
                                 <p spellcheck="false" class="">Our platform is designed to make recycling easy
                                     and accessible for everyone, from individuals to businesses.</p>
                             </div>
-                        </div><!-- End Feature Borx-->
-
+                        </div>
                         <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
                             <div class="feature-box green">
                                 <i class="fa-solid fa-list-check"></i>
@@ -1820,8 +1576,7 @@
                                 <p spellcheck="false" class="">Monitor your recycling habits and see how much
                                     impact you’re making with our detailed reports.</p>
                             </div>
-                        </div><!-- End Feature Borx-->
-
+                        </div>
                         <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
                             <div class="feature-box red">
                                 <i class="fa-solid fa-users"></i>
@@ -1829,28 +1584,20 @@
                                 <p spellcheck="false" class="">Join our network of environmentally conscious
                                     users and collaborate to create a cleaner planet.</p>
                             </div>
-                        </div><!-- End Feature Borx-->
-
+                        </div>
                     </div>
-
                 </div>
-
             </section>
         </div>
         <div id="section-yLbTUdzPpM" class="builder-section-wrap position-relative ">
             <section id="team" class="team section" data-builder="section">
-
                 <div class="container section-title" data-aos="fade-up" data-builder="section-title">
-
                     <div><span spellcheck="false" class="">Check out Our</span> <span class="description-title"
                             spellcheck="false">Team</span></div>
                 </div>
                 <slot type="section-title"></slot>
-
                 <div class="container">
-
                     <div class="row gy-5">
-
                         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                             <div class="member">
                                 <div class="pic"><img src="{{ asset('assets/images/pp.jpeg') }}" class="img-fluid"
@@ -1867,8 +1614,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div><!-- End Team Member -->
-
+                        </div>
                         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                             <div class="member">
                                 <div class="pic"><img src="{{ asset('assets/images/dyah.png') }}"
@@ -1884,8 +1630,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div><!-- End Team Member -->
-
+                        </div>
                         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                             <div class="member">
                                 <div class="pic"><img src="{{ asset('assets/images/satir.png') }}"
@@ -1901,26 +1646,18 @@
                                     </div>
                                 </div>
                             </div>
-                        </div><!-- End Team Member -->
-
+                        </div>
                     </div>
-
                 </div>
-
             </section>
         </div>
         <div id="section-T5GRLN331E" class="builder-section-wrap position-relative " data-js=" faq" style="">
             <section id="faq" class="faq section" data-builder="section"
                 data-colorpreset="cp-light-background">
-
                 <slot type="section-title"></slot>
-
                 <div class="container-fluid">
-
                     <div class="row gy-4">
-
                         <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-
                             <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
                                 <h3 spellcheck="false"><span spellcheck="false">Frequently Asked </span><strong
                                         spellcheck="false">Questions</strong></h3>
@@ -1928,9 +1665,7 @@
                                     Here are the following Frequently Asked Questuons that we gather from people who is
                                     just recently joined and interested to learn more about how the program go:</p>
                             </div>
-
                             <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
-
                                 <div class="faq-item faq-active">
                                     <i class="fa-regular fa-circle-question"></i>
                                     <h3 spellcheck="false">Non consectetur a erat nam at lectus urna duis?</h3>
@@ -1940,8 +1675,7 @@
                                             fringilla urna porttitor rhoncus dolor purus non.</p>
                                     </div>
                                     <i class="faq-toggle fa-solid fa-chevron-right"></i>
-                                </div><!-- End Faq item-->
-
+                                </div>
                                 <div class="faq-item">
                                     <i class="fa-regular fa-circle-question"></i>
                                     <h3 spellcheck="false">Feugiat scelerisque varius morbi enim nunc faucibus a
@@ -1953,8 +1687,7 @@
                                             dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
                                     </div>
                                     <i class="faq-toggle fa-solid fa-chevron-right"></i>
-                                </div><!-- End Faq item-->
-
+                                </div>
                                 <div class="faq-item">
                                     <i class="fa-regular fa-circle-question"></i>
                                     <h3 spellcheck="false">Dolor sit amet consectetur adipiscing elit pellentesque?
@@ -1967,36 +1700,26 @@
                                             morbi quis</p>
                                     </div>
                                     <i class="faq-toggle fa-solid fa-chevron-right"></i>
-                                </div><!-- End Faq item-->
-
+                                </div>
                             </div>
-
                         </div>
-
                         <div class="col-lg-5 order-1 order-lg-2">
                             <img src="https://builder.bootstrapmade.com/static/img/faq.jpg" class="img-fluid"
                                 alt="" data-aos="zoom-in" data-aos-delay="100">
                         </div>
                     </div>
-
                 </div>
-
             </section>
         </div>
         <div id="section-7ZmNlAyBQT" class="builder-section-wrap position-relative " style="">
             <section id="contact" class="contact section" data-builder="section">
-
                 <div class="container section-title" data-aos="fade-up" data-builder="section-title">
-
                     <div><span spellcheck="false" class="">Send us an</span> <span class="description-title"
                             spellcheck="false">Email!</span></div>
                 </div>
                 <slot type="section-title"></slot>
-
                 <div class="container" data-aos="fade" data-aos-delay="100">
-
                     <div class="row gy-4">
-
                         <div class="col-lg-4">
                             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                                 <i class="fa-solid fa-building"></i>
@@ -2004,73 +1727,58 @@
                                     <h3 spellcheck="false">Address</h3>
                                     <p spellcheck="false" class="">SMK Wikrama Bogor</p>
                                 </div>
-                            </div><!-- End Info Item -->
-
+                            </div>
                             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                                 <i class="fa-solid fa-phone"></i>
                                 <div>
                                     <h3 spellcheck="false">Call Us</h3>
                                     <p spellcheck="false">+1 5589 55488 55</p>
                                 </div>
-                            </div><!-- End Info Item -->
-
+                            </div>
                             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                                 <i class="fa-regular fa-envelope"></i>
                                 <div>
                                     <h3 spellcheck="false">Email Us</h3>
                                     <p spellcheck="false">info@example.com</p>
                                 </div>
-                            </div><!-- End Info Item -->
-
+                            </div>
                         </div>
-
                         <div class="col-lg-8">
                             <form action="forms/contact.php" method="post" class="php-email-form"
                                 data-aos="fade-up" data-aos-delay="200">
                                 <div class="row gy-4">
-
                                     <div class="col-md-6">
                                         <input type="text" name="name" class="form-control"
                                             placeholder="Your Name" required="">
                                     </div>
-
                                     <div class="col-md-6 ">
                                         <input type="email" class="form-control" name="email"
                                             placeholder="Your Email" required="">
                                     </div>
-
                                     <div class="col-md-12">
                                         <input type="text" class="form-control" name="subject"
                                             placeholder="Subject" required="">
                                     </div>
-
                                     <div class="col-md-12">
                                         <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                                     </div>
-
                                     <div class="col-md-12 text-center">
                                         <div class="loading">Loading</div>
                                         <div class="error-message"></div>
                                         <div class="sent-message">Your message has been sent. Thank you!</div>
-
                                         <button type="submit">Send Message</button>
                                     </div>
-
                                 </div>
                             </form>
-                        </div><!-- End Contact Form -->
-
+                        </div>
                     </div>
-
                 </div>
-
             </section>
         </div>
         <div class="justify-content-center builder-add-components-btn"><a href=""
                 class="builder-add-section-btn d-flex align-items-center justify-content-center"
                 title="Add Sections Here"><i class="bi bi-plus"></i> Add Sections Here</a></div>
         <slot type="sections"></slot>
-
     </main>
     <footer id="footer" class="footer" data-builder="footer" data-colorpreset="cp-dark-background">
         <div class="container">
@@ -2099,11 +1807,9 @@
                         <ul class="list-unstyled float-start">
                             <li><a href="#">Contact Us</a></li>
                             <li></li>
-
                         </ul>
                     </div>
                 </div>
-
                 <div class="col-md-6 col-lg-3 pl-lg-5">
                     <div class="widget">
                         <h3 class="widget-heading" spellcheck="false">Connect With Us!</h3>
@@ -2122,7 +1828,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="widget">
                         <div class="footer-subscribe">
                             <h3 class="widget-heading" spellcheck="false">Subscribe</h3>
@@ -2130,7 +1835,6 @@
                                 <div class="mb-2">
                                     <input type="text" class="form-control" name="email"
                                         placeholder="Enter your email">
-
                                     <button type="submit" class="btn btn-link">
                                         <span><i class="fa-solid fa-chevron-right"></i></span>
                                     </button>
@@ -2145,11 +1849,9 @@
                     </div>
                 </div>
             </div>
-
             <div class="copyright d-flex flex-column flex-md-row align-items-center justify-content-md-between">
                 <p>© <span>Copyright</span> <strong class="px-1 sitename">RecyclePro</strong> <span>All Rights
                         Reserved</span></p>
-
             </div>
         </div>
     </footer>
@@ -2177,7 +1879,6 @@
                         'sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
                 window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
             }
-
             document.addEventListener('scroll', toggleScrolled);
             window.addEventListener('load', toggleScrolled);
         })();
@@ -2191,9 +1892,7 @@
             window.addEventListener('scroll', function() {
                 const selectHeader = document.querySelector('#header');
                 if (!selectHeader.classList.contains('scroll-up-sticky')) return;
-
                 let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
                 if (scrollTop > lastScrollTop && scrollTop > selectHeader.offsetHeight) {
                     selectHeader.style.setProperty('position', 'sticky', 'important');
                     selectHeader.style.top = `-${header.offsetHeight + 50}px`;
@@ -2214,7 +1913,6 @@
              * Scroll top button
              */
             let scrollTop = document.querySelector('.scroll-top');
-
             function toggleScrollTop() {
                 if (scrollTop) {
                     window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
@@ -2227,7 +1925,6 @@
                     behavior: 'smooth'
                 });
             });
-
             window.addEventListener('load', toggleScrollTop);
             document.addEventListener('scroll', toggleScrollTop);
         })();
@@ -2242,7 +1939,6 @@
                     let config = JSON.parse(
                         swiperElement.querySelector(".swiper-config").innerHTML.trim()
                     );
-
                     if (swiperElement.classList.contains("swiper-tab")) {
                         initSwiperWithCustomPagination(swiperElement, config);
                     } else {
@@ -2250,7 +1946,6 @@
                     }
                 });
             }
-
             window.addEventListener("load", initSwiper);
         })();
     </script>
@@ -2290,7 +1985,6 @@
              * Mobile nav toggle
              */
             const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
-
             function mobileNavToogle() {
                 document.querySelector('body').classList.toggle('mobile-nav-active');
                 mobileNavToggleBtn.classList.toggle('bi-list');
@@ -2299,7 +1993,6 @@
             if (mobileNavToggleBtn) {
                 mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
             }
-
             /**
              * Hide mobile nav on same-page/hash links
              */
@@ -2309,7 +2002,6 @@
                         mobileNavToogle();
                     }
                 });
-
             });
         })();
     </script>
@@ -2331,5 +2023,4 @@
     <script id="builder-js"></script>
     <script type="text/javascript" src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
 </body>
-
 </html>

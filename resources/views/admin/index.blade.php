@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mt-5" style="padding: 150px 0;">
+    <div class="container" style="padding: 100px 0 ;">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h2>Manage Accounts</h2>
             <!-- Tombol untuk menambah akun baru -->

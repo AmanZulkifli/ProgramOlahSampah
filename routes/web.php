@@ -8,6 +8,7 @@ use App\Http\Controllers\WasteManagementController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\EconomicBenefitController;
 
 // Middleware
 use App\Http\Middleware\isLogin;
@@ -42,9 +43,16 @@ Route::middleware([isLogin::class])->group(function () {
     Route::post('/manage', [WasteManagementController::class, 'store'])->name('waste.store');
     Route::delete('/manage/{id}', [WasteManagementController::class, 'destroy'])->name('waste.delete');
 
+    // Untuk settings pengguna
+    Route::get('/settings', [UserController::class, 'showsettings'])->name('settings');
     // untuk profil pengguna
     Route::get('/profile', [UserController::class, 'showprofile'])->name('profile');
     Route::post('/profile/update-picture', [ProfileController::class, 'updatePicture'])->name('profile.updatePicture');
+
+    // Untuk Menukar Point
+    Route::get('/exchange', [EconomicBenefitController::class, 'index'])->name('exchange');
+    Route::post('/exchange', [EconomicBenefitController::class, 'store'])->name('exchange.store');
+    
 });
 
 // untuk pengguna dengan role tertentu
@@ -52,6 +60,8 @@ Route::middleware([CheckRole::class])->group(function () {
     // Halaman untuk mengelola permintaan limbah
     Route::get('/manage-requests', [WasteManagementController::class, 'manageRequests'])->name('manage.requests');
     Route::put('/manage-requests/{id}', [WasteManagementController::class, 'updateRequest'])->name('update.requests');
+    Route::put('/manage-requests/bulk-update', [WasteManagementController::class, 'bulkUpdate'])->name('bulk.update.requests');
+
 });
 
 // untuk admin

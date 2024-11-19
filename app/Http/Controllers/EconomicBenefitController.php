@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\EconomicBenefit;
+use App\Models\User;
+use Auth;
 use Illuminate\Http\Request;
 
 class EconomicBenefitController extends Controller
@@ -12,7 +14,7 @@ class EconomicBenefitController extends Controller
      */
     public function index()
     {
-        //
+        $user_points = Auth::user()->points;    
     }
 
     /**

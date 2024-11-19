@@ -82,8 +82,103 @@ class UserController extends Controller
     }
 
     // Menampilkan halaman home
-    public function showhome()
+    public function showhome(Request $request)
     {
+        $user = Auth::user(); // Mendapatkan user yang sedang login
+        $user_id = Auth::id();
+        $query = $request->input('query');
+        // Mengambil data pengelolaan sampah user
+        $waste_records = WasteManagement::where('user_id', $user_id)
+        ->where('waste_type', 'like', '%' . $query . '%')
+        ->orderBy('created_at', 'desc')
+        ->simplePaginate(5);                
+        $all_waste_records = WasteManagement::where('user_id', $user_id)->get();
+        $total_waste = WasteManagement::where('user_id', $user_id)->sum('quantity'); // Total berat sampah
+        $completed = WasteManagement::where('user_id', $user_id)->where('status', 'completed')->sum('quantity');
+        $pending_waste = WasteManagement::where('user_id', $user_id)->where('status', 'pending')->sum('quantity');
+
+        // Menghitung poin hanya untuk sampah yang statusnya 'completed'
+        $points_awarded = 0;
+        foreach ($all_waste_records as $record) {
+            if ($record->status === 'completed') {
+                switch ($record->waste_type) {
+                    case 'plastic':
+                        $points_awarded += $record->quantity * 1.3;
+                        break;
+                    case 'paper':
+                        $points_awarded += $record->quantity * 1.5;
+                        break;
+                    case 'metal':
+                        $points_awarded += $record->quantity * 2.8;
+                        break;
+                    case 'glass':
+                        $points_awarded += $record->quantity * 3;
+                        break;
+                    case 'organic':
+                        $points_awarded += $record->quantity * 3.5;
+                        break;
+                    default:
+                        $points_awarded += $record->quantity;
+                        break;
+                }
+            }
+        }
+
+        // Update poin user jika poin belum pernah diatur sebelumnya
+        if ($user->points == 0) {
+            $user->points += $points_awarded;
+            $user->save();
+        } else {
+            $user->points += $points_awarded - $user->points;
+            $user->save();
+        }
+
+        // Menghitung level berdasarkan total berat sampah
+        $level = $this->calculateLevel($total_waste);
+
+        // Update level user jika level berubah
+        if ($user->level != $level) {
+            $user->level = $level;
+            $user->save();
+        }
+
+        return view('pages.index', data: compact('user', 'total_waste', 'pending_waste', 'completed', 'waste_records', 'points_awarded', 'level'));
+    }
+
+    // Fungsi untuk menghitung level user berdasarkan total berat sampah
+    private function calculateLevel($total_waste)
+    {
+        $base_weight = 5; // Syarat berat untuk naik level
+        $level = 1;
+
+        // Setiap kelipatan 5kg, level akan naik
+        while ($total_waste >= $base_weight) {
+            $level++;
+            $total_waste -= $base_weight; // Mengurangi total berat sesuai kelipatan
+        }
+
+        return $level;
+    }
+
+    // Menampilkan halaman manajemen sampah
+    public function showmanage()
+    {
+        return view('pages.waste');
+    }
+
+    // Menampilkan halaman profil user
+    public function showprofile(Request $request)
+    {
+        $user = Auth::user();
+        $totalWaste = WasteManagement::where('user_id', $user->id)->sum('quantity');
+        $points = $user->points; // Asumsi poin tersimpan di kolom 'points'
+        $level = $this->calculateLevel($totalWaste);
+
+        return view('pages.profile', compact('totalWaste', 'points', 'level'));
+    }
+
+    // Untuk menampilkan settings
+    public function showsettings() {
         $user = Auth::user(); // Mendapatkan user yang sedang login
         $user_id = Auth::id();
 
@@ -139,41 +234,9 @@ class UserController extends Controller
             $user->save();
         }
 
-        return view('pages.index', compact('user', 'total_waste', 'pending_waste', 'completed', 'waste_records', 'points_awarded', 'level'));
+
+        return view('layouts.appa', compact('user', 'total_waste', 'pending_waste', 'completed', 'waste_records', 'points_awarded', 'level'));  
     }
-
-    // Fungsi untuk menghitung level user berdasarkan total berat sampah
-    private function calculateLevel($total_waste)
-    {
-        $base_weight = 5; // Syarat berat untuk naik level
-        $level = 1;
-
-        // Setiap kelipatan 5kg, level akan naik
-        while ($total_waste >= $base_weight) {
-            $level++;
-            $total_waste -= $base_weight; // Mengurangi total berat sesuai kelipatan
-        }
-
-        return $level;
-    }
-
-    // Menampilkan halaman manajemen sampah
-    public function showmanage()
-    {
-        return view('pages.waste');
-    }
-
-    // Menampilkan halaman profil user
-    public function showprofile(Request $request)
-    {
-        $user = Auth::user();
-        $totalWaste = WasteManagement::where('user_id', $user->id)->sum('quantity');
-        $points = $user->points; // Asumsi poin tersimpan di kolom 'points'
-        $level = $this->calculateLevel($totalWaste);
-
-        return view('pages.profile', compact('totalWaste', 'points', 'level'));
-    }
-
     // Fungsi update user
     public function update(Request $request, string $id)
     {

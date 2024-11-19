@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mt-5" style="padding: 100px 0;">
+    <div class="container" style="padding: 100px 0;">
         <!-- Header Profil -->
         <div class="container d-flex">
             <!-- Gambar profil, menggunakan gambar default jika tidak ada -->

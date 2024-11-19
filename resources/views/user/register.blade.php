@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.oldapp')
 
 @section('content')
 <body class="bg-dark">
